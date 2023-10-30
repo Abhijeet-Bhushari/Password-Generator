@@ -10,16 +10,16 @@
 <body>
     <div class="container">
         <div class="heading">NEVER USE INSECURE <br> <span class="heading-2">PASSWORDS AGAIN</span></div>
-        <form action="">
+        <form>
             <input type="number" placeholder="Enter length eg: 8" required class="input">
-            <button id="generate">Generate Password</button>
-            <div class="generated-passwords">
-                <div class="pass">Password1</div>
-                <div class="pass">password2</div>
-                <div class="pass">password3</div>
-                <div class="pass">password4</div>
-            </div>
+            <button id="generate" type="submit" onclick="generate()">Generate Password</button>
         </form>
+            <div class="generated-passwords">
+                <div class="pass" id="pass1">Password1</div>
+                <div class="pass" id="pass2">password2</div>
+                <div class="pass" id="pass3">password3</div>
+                <div class="pass" id="pass4">password4</div>
+            </div>
     </div>
 </body>
 </html>
