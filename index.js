@@ -4,6 +4,31 @@ function generate(){
 
 loginForm = document.getElementById('login-form');
 
+imgEl1 = document.getElementById('img1');
+imgEl2 = document.getElementById('img2');
+imgEl3 = document.getElementById('img3');
+imgEl4 = document.getElementById('img4');
+
+function copyPass(passId){
+    passEl = document.querySelector(passId);
+    navigator.clipboard.writeText(passEl.textContent);
+}
+
+imgEl1.addEventListener('click', (e) => {
+    copyPass('#pass1');
+});
+imgEl2.addEventListener('click', (e) => {
+    copyPass('#pass2');
+});
+imgEl3.addEventListener('click', (e) => {
+    copyPass('#pass3');
+});
+imgEl4.addEventListener('click', (e) => {
+    copyPass('#pass4');
+});
+
+
+
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let len = document.getElementById('input');
